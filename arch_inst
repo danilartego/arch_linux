@@ -42,7 +42,7 @@ mkfs.btrfs /dev/nvme0n1p3
 echo 'Монтирование дисков'
 echo '=================='
 
-mkdir -p /mnt/boot/efi
+mkdir /mnt/boot/efi
 mkdir /mnt/home
 
 mount /dev/nvme0n1p1 /mnt/boot/efi
