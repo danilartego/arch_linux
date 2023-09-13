@@ -10,6 +10,12 @@ setfont cyr-sun16
 echo 'Синхронизация системных часов'
 timedatectl set-ntp true
 
+echo 'Удаление всех разделов'
+(
+  echo g;
+  echo w;
+) | fdisk /dev/nvme0n1
+
 echo 'Разбиение дисков'
 (
   echo g;
