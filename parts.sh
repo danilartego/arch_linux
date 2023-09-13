@@ -22,7 +22,7 @@ echo 'Разбиение дисков'
   echo n;
   echo ;
   echo ;
-  echo +500M;
+  echo +1G;
   echo t;
   echo 1;
   
@@ -48,9 +48,19 @@ mkfs.btrfs -f /dev/nvme0n1p3
 echo 'Монтирование дисков'
 echo '=================='
 
-mkdir /mnt/boot/efi
-mkdir /mnt/home
+if [ -d "/mnt/boot/efi" ]
+then
+  echo 'Уже есть директория /mnt/boot/efi'
+else
+  mkdir -p /mnt/boot/efi
+fi
 
-mount /dev/nvme0n1p1 /mnt/boot/efi
+if [ -d "/mnt/home" ]
+then
+  echo 'Уже есть директория /mnt/home'
+else
+  mkdir -p /mnt/home
+fi
+
 mount /dev/nvme0n1p2 /mnt
 mount /dev/nvme0n1p3 /mnt/home
