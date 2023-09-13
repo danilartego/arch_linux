@@ -1,10 +1,14 @@
 #!/bin/bash
 
 # Arch Linux Install v.1.0.1
+# Мастер помощник установки Arch Linux
+# Протестирован на версии сентябрь 2023
 
-echo 'Мастер помощник установки Arch Linux'
-echo 'протестирован на версии сентябрь 2023'
-echo '===================================='
+loadkeys ru
+setfont cyr-sun16
+
+echo 'Синхронизация системных часов'
+timedatectl set-ntp true
 
 echo 'Разбиение дисков'
 (
