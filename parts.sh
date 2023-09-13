@@ -23,7 +23,6 @@ echo 'Разбиение дисков'
   echo ;
   echo ;
   echo +1G;
-  echo y;
   echo t;
   echo 1;
   
