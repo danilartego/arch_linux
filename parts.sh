@@ -42,8 +42,8 @@ echo 'Разбиение дисков'
 echo '================'
 
 mkfs.fat -F32 /dev/nvme0n1p1
-mkfs.btrfs /dev/nvme0n1p2
-mkfs.btrfs /dev/nvme0n1p3
+mkfs.btrfs -f /dev/nvme0n1p2
+mkfs.btrfs -f /dev/nvme0n1p3
 
 echo 'Монтирование дисков'
 echo '=================='
