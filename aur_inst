@@ -14,6 +14,7 @@ sudo pacman -S git base-devel
 
 # устанавка уже скомпилированный пакет (yay-bin)
 # чтобы yay собирался из исходников, вместо yay-bin.git впишите yay.git.
+cd ~
 git clone https://aur.archlinux.org/yay-bin.git
 
 # переход в папку

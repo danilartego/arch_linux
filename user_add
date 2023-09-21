@@ -3,7 +3,14 @@
 # Arch Linux
 # Добавление пользователей
 
-source ./VARIABLE
+if [ -f "./VARIABLE" ]
+  then
+  source ./VARIABLE
+  else
+  echo "Задать переменые для установки"
+  echo "Запустите перед установкой - set_var"
+  exit
+fi
 
 read -p "Введите имя компьютера: " hostname
 read -p "Введите имя пользователя: " username

@@ -68,18 +68,18 @@ rm -rf /mnt/boot
 echo 'Монтирование дисков'
 echo '=================='
 
-# if [ -d "/mnt/boot/efi" ]
-# then
-#   echo 'Уже есть директория /mnt/boot/efi'
-# else
+if [ -d "/mnt/boot/efi" ]
+  then
+  echo 'Уже есть директория /mnt/boot/efi'
+  else
   mkdir -p /mnt/boot/efi
-# fi
+fi
 
-# if [ -d "/mnt/home" ]
-# then
-#   echo 'Уже есть директория /mnt/home'
-# else
+if [ -d "/mnt/home" ]
+  then
+  echo 'Уже есть директория /mnt/home'
+  else
   mkdir -p /mnt/home
-# fi
+fi
 
 mount /dev/${disk}p2 /mnt

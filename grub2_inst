@@ -6,13 +6,20 @@
 # echo 'Создадим загрузочный RAM диск'
 # mkinitcpio -p linux
 
-source ./VARIABLE
+if [ -f "./VARIABLE" ]
+  then
+  source ./VARIABLE
+  else
+  echo "Задать переменые для установки"
+  echo "Запустите перед установкой - set_var"
+  exit
+fi
 
 echo 'Устанавливаем загрузчик'
-mount /dev/nvme0n1p1 /mnt/boot
+mount /dev/${disk}p1 /mnt/boot
 pacman -Syy
 pacman -S grub efibootmgr --noconfirm
-grub-install /dev/nvme0n1
+grub-install /mnt/boot
 
 echo 'Обновляем grub.cfg'
 grub-mkconfig -o /boot/grub/grub.cfg
