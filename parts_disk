@@ -3,7 +3,14 @@
 # Arch Linux
 # Разбиение диска под linux
 
-source ./VARIABLE
+if [ -f "./VARIABLE" ]
+  then
+  source ./VARIABLE
+  else
+  echo "Задать переменые для установки"
+  echo "Запустите перед установкой - set_var"
+  exit
+fi
 
 loadkeys ru
 setfont cyr-sun16

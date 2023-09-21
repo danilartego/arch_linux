@@ -3,7 +3,14 @@
 # Arch Linux
 # Установки RU локали
 
-source ./VARIABLE
+if [ -f "./VARIABLE" ]
+  then
+  source ./VARIABLE
+  else
+  echo "Задать переменые для установки"
+  echo "Запустите перед установкой - set_var"
+  exit
+fi
 
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 
