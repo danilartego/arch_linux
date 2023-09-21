@@ -36,7 +36,6 @@ echo "hostname=\"$hostname\"" >> VARIABLE
 echo "username=\"$username\"" >> VARIABLE
 echo "soft=\"$soft\"" >> VARIABLE
 
-
 source ./VARIABLE
 
 echo "Внесены новые переменные для установки"
