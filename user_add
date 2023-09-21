@@ -3,6 +3,8 @@
 # Arch Linux
 # Добавление пользователей
 
+clear
+
 if [ -f "./VARIABLE" ]
   then
   source ./VARIABLE
@@ -11,9 +13,6 @@ if [ -f "./VARIABLE" ]
   echo "Запустите перед установкой - set_var"
   exit
 fi
-
-read -p "Введите имя компьютера: " hostname
-read -p "Введите имя пользователя: " username
 
 echo 'Прописываем имя компьютера'
 echo $hostname > /etc/hostname

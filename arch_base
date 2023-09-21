@@ -3,6 +3,8 @@
 # Arch Linux
 # Установка базы linux
 
+clear
+
 if [ -f "./VARIABLE" ]
   then
   source ./VARIABLE

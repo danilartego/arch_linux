@@ -3,6 +3,8 @@
 # Arch Linux
 # Разбиение диска под linux
 
+clear
+
 if [ -f "./VARIABLE" ]
   then
   source ./VARIABLE

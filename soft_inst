@@ -3,6 +3,8 @@
 # Arch Linux
 # Установка дополнительный пакетов и другого софта
 
+clear
+
 if [ -f "./VARIABLE" ]
   then
   source ./VARIABLE
