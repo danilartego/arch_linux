@@ -11,4 +11,4 @@ echo 'Include = /etc/pacman.d/mirrorlist' >> /etc/pacman.conf
 pacman -Syy
 
 echo 'Установка дополнительных пакетов'
-pacman -S nano vim git dhcpcd netctl
+pacman -S $soft --noconfirm
