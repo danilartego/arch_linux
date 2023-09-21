@@ -22,8 +22,7 @@ echo "Все переменные вводяться без пробелов (м
 read -p "Введите имя диска для установки (sda, sdb или nvme0n1 ): " disk
 read -p "Введите имя компьютера: " hostname
 read -p "Введите имя пользователя: " username
-echo "Установка дополнительного софта (пример: nano git vim и т.п.):"
-read soft
+read -r -p "Установка дополнительного софта (пример: nano git vim и т.п.):" soft
 
 rm VARIABLE
 echo "disk="$disk"" > VARIABLE
