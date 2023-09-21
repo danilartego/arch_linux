@@ -6,6 +6,8 @@
 # echo 'Создадим загрузочный RAM диск'
 # mkinitcpio -p linux
 
+source ./VARIABLE
+
 echo 'Устанавливаем загрузчик'
 mount /dev/nvme0n1p1 /mnt/boot
 pacman -Syy

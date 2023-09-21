@@ -3,6 +3,8 @@
 # Arch Linux
 # Установка базы linux
 
+source ./VARIABLE
+
 reflector -l 3 --sort rate --save /etc/pacman.d/mirrorlist
 
 echo 'Установка основных пакетов'

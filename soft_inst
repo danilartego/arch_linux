@@ -3,6 +3,8 @@
 # Arch Linux
 # Установка дополнительный пакетов и другого софта
 
+source ./VARIABLE
+
 echo 'Раскомментируем репозиторий multilib Для работы 32-битных приложений в 64-битной системе.'
 echo '[multilib]' >> /etc/pacman.conf
 echo 'Include = /etc/pacman.d/mirrorlist' >> /etc/pacman.conf

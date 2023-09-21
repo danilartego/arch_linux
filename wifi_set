@@ -3,5 +3,7 @@
 # Arch Linux
 # Установка WI-FI
 
+source ./VARIABLE
+
 echo 'Ставим программу для Wi-fi'
 pacman -S dialog wpa_supplicant --noconfirm 

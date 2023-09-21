@@ -3,6 +3,8 @@
 # Arch Linux
 # Добавление пользователей
 
+source ./VARIABLE
+
 read -p "Введите имя компьютера: " hostname
 read -p "Введите имя пользователя: " username
 

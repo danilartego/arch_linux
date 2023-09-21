@@ -3,6 +3,8 @@
 # Arch Linux
 # Разбиение диска под linux
 
+source ./VARIABLE
+
 loadkeys ru
 setfont cyr-sun16
 
@@ -16,7 +18,7 @@ echo '=========================='
 # echo 'Размонтирование всех дисков'
 # umount -a
 
-read -p "Введите имя диска для установки (sda, sdb или nvme0n1 ): " disk
+# read -p "Введите имя диска для установки (sda, sdb или nvme0n1 ): " disk
 
 echo "Удаление всех разделов на диске: $disk"
 (
