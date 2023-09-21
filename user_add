@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Arch Linux
+# Добавление пользователей
+
+read -p "Введите имя компьютера: " hostname
+read -p "Введите имя пользователя: " username
+
+echo 'Прописываем имя компьютера'
+echo $hostname > /etc/hostname
+
+echo 'Добавляем пользователя'
+useradd -m -g users -G wheel -s /bin/bash $username
+
+echo 'Создаем root пароль'
+passwd
+
+echo 'Устанавливаем пароль пользователя'
+passwd $username
+
+echo 'Устанавливаем SUDO'
+echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
+
