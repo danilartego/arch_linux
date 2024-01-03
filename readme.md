@@ -23,4 +23,6 @@
 - blth_set - установка bluetooth
 
 Документация по [Markdown] (https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+This site was built using [GitHub Pages](https://pages.github.com/).
   
