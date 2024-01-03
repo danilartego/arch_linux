@@ -22,7 +22,5 @@
 - wifi_set - установка wifi
 - blth_set - установка bluetooth
 
-[wef](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
-
-This site was built using [GitHub Pages](https://pages.github.com/).
+[Докумеентация по markdown](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
   
