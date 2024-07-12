@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Arch Linux
+# Установка базы linux
+
+clear
+
+if [ -f "./VARIABLE" ]
+  then
+  source ./VARIABLE
+  else
+  echo "Задать переменые для установки"
+  echo "Запустите перед установкой - set_var"
+  exit
+fi
+
+mount /dev/${disk}p2 /mnt
+
+reflector -l 3 --sort rate --save /etc/pacman.d/mirrorlist
+
+echo 'Установка основных пакетов'
+pacstrap /mnt base linux linux-firmware
+
+echo 'Настройка системы, запись таблицы файловых систем'
+genfstab -pU /mnt >> /mnt/etc/fstab
+
+arch-chroot /mnt

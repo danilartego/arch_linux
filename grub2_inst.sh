@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Arch Linux
+# Установка загрузчика 
+
+clear
+
+# echo 'Создадим загрузочный RAM диск'
+# mkinitcpio -p linux
+
+if [ -f "./VARIABLE" ]
+  then
+  source ./VARIABLE
+  else
+  echo "Задать переменые для установки"
+  echo "Запустите перед установкой - set_var"
+  exit
+fi
+
+echo 'Устанавливаем загрузчик'
+mount /dev/${disk}p1 /mnt/boot
+pacman -Syy
+pacman -S grub efibootmgr --noconfirm
+grub-install /mnt/boot
+
+echo 'Обновляем grub.cfg'
+grub-mkconfig -o /boot/grub/grub.cfg
