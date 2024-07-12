@@ -1,0 +1,33 @@
+- **.old
+
+- /community/os/x86_64/kea-devel-docs-*
+
++ /community/os/x86_64/firefox-developer-edition-i18n-en-us-*
++ /community/os/x86_64/firefox-developer-edition-i18n-ru-*
+- /community/os/x86_64/firefox-developer-edition-i18n-*
++ /community/os/x86_64/gimp-help-en-*
++ /community/os/x86_64/gimp-help-ru-*
+- /community/os/x86_64/gimp-help-*
++ /community/os/x86_64/vim-spell-en-*
++ /community/os/x86_64/vim-spell-ru-*
+- /community/os/x86_64/vim-spell-*
+
++ /extra/os/x86_64/firefox-i18n-en-us-*
++ /extra/os/x86_64/firefox-i18n-ru-*
+- /extra/os/x86_64/firefox-i18n-*
++ /extra/os/x86_64/hunspell-en_us-*
+- /extra/os/x86_64/hunspell-[a-z]*
++ /extra/os/x86_64/libreoffice-fresh-en-*
++ /extra/os/x86_64/libreoffice-fresh-ru-*
+- /extra/os/x86_64/libreoffice-fresh-[a-z]*
++ /extra/os/x86_64/libreoffice-still-en-*
++ /extra/os/x86_64/libreoffice-still-ru-*
+- /extra/os/x86_64/libreoffice-still-[a-z]*
++ /extra/os/x86_64/thunderbird-i18n-en-us-*
++ /extra/os/x86_64/thunderbird-i18n-ru-*
+- /extra/os/x86_64/thunderbird-i18n-*
+
+- /iso/latest/arch
++ /iso/latest
++ /iso/latest/*
+- /iso/**
