@@ -1,5 +1,7 @@
 #!/bin/bash
 
+pacman -S sudo --noconfirm
+
 # Добавление группы wheel
 echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
 
