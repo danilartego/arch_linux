@@ -11,7 +11,7 @@ clear
 # Просто отдаём весь список в yay и он сам уже всё устанавливает.
 
 # установим нужные для сборки инструменты
-sudo pacman -S git base-devel
+sudo pacman -S git base-devel --noconfirm
 
 # устанавка уже скомпилированный пакет (yay-bin)
 # чтобы yay собирался из исходников, вместо yay-bin.git впишите yay.git.
